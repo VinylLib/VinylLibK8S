@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: vinyl-lib-app
+  name: vinyl-lib-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vinyl-lib-app
+  template:
+    metadata:
+      labels:
+        app: vinyl-lib-app
+    spec:
+      containers:
+      - image: kporwit/vinyl_lib_app:v0.1.0
+        name: vinyl-lib-app-container
+        ports:
+          - containerPort: 8000
+            name: hello-port
