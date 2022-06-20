@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: vinyl-lib-app
+  labels:
+    app: vinyl-lib-app-service
+  name: vinyl-lib-app-service
+spec:
+  ports:
+  - name: hello-port-expose
+    port: 8080
+    protocol: TCP
+    targetPort: hello-port
+    nodePort: 31214
+  selector:
+    app: vinyl-lib-app
+  type: NodePort
+status:
+  loadBalancer: {}

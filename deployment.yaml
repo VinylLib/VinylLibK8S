@@ -22,8 +22,9 @@ spec:
         app: vinyl-lib-app
     spec:
       containers:
-      - image: kporwit/vinyl_lib_app:v0.1.0
+      - image: kporwit/vinyl_lib_app:v0.1.1
         name: vinyl-lib-app-container
+        imagePullPolicy: Always
         ports:
           - containerPort: 8000
             name: hello-port
