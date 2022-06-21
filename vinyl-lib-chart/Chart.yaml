@@ -8,4 +8,4 @@ appVersion: "v0.1.1"
 annotations:
   artifacthub.io/images: |
     - name: vinyl-lib-app
-      image: "kporwit/vinyl_lib_app"
+      image: "kporwit/vinyl_lib_app:v0.1.1"
