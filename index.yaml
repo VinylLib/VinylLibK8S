@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  vinyl-lib-chart:
+  - annotations:
+      artifacthub.io/images: |
+        - name: vinyl-lib-app
+          image: "kporwit/vinyl_lib_app"
+    apiVersion: v2
+    appVersion: v0.1.1
+    created: "2022-06-21T11:50:44.107727672+02:00"
+    description: A vinyl-lib Helm chart for Kubernetes
+    digest: b3bd93cbd558ac7842d32702a92164df4b9c92d5ab4616db065de193c03662d8
+    name: vinyl-lib-chart
+    type: application
+    urls:
+    - vinyl-lib-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-21T11:50:44.10746937+02:00"
