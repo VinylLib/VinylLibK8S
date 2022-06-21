@@ -1,0 +1,3 @@
+replicaCount: 3
+imageRepository: "kporwit/vinyl_lib_app"
+imageTag: "v0.1.1"
